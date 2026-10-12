@@ -43,7 +43,7 @@ LANE_COLORS = [(255, 90, 200), (255, 150, 60), (255, 220, 70),
 
 RECEPTOR_Y = 150
 SPAWN_Y = -191
-SPEED = 150.0
+SPEED = 200.0
 HIT_FROM_Y = 100
 MISS_Y = 200
 HIT_POINTS = 100
@@ -401,8 +401,8 @@ class Game:
 
     def _draw_title(self, screen, snap):
         self._dim(screen, 175)
-        self._centered(screen, "font_xl", "HAND-SIGN", 200, (255, 120, 220))
-        self._centered(screen, "font_xl", "PUMP IT UP", 270, (255, 255, 255))
+        self._centered(screen, "font_xl", "POINT", 200, (255, 120, 220))
+        self._centered(screen, "font_xl", "IT UP", 270, (255, 255, 255))
         if snap.error:
             for i, line in enumerate(snap.error.split("\n")):
                 self._centered(screen, "font_s", line, 380 + i * 28, (255, 120, 120))
@@ -514,7 +514,7 @@ def make_sound_player(use_music):
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Hand-sign Pump It Up")
+    ap = argparse.ArgumentParser(description="Point It Up")
     ap.add_argument("--camera", type=int, default=0, help="camera index (default 0)")
     ap.add_argument("--no-music", action="store_true", help="turn the background music off")
     args = ap.parse_args()
@@ -525,7 +525,7 @@ def main():
         pass
     pygame.init()
     screen = pygame.display.set_mode((WIN_W, WIN_H))
-    pygame.display.set_caption("Hand-Sign Pump It Up")
+    pygame.display.set_caption("Point It Up")
     game = Game(load_assets(), make_sound_player(not args.no_music))
 
     hands = HandInput(args.camera)
