@@ -4,7 +4,7 @@ Tunjuk ke arah yang sama dengan pointer yang berjalan, tanpa menggunakan dance-p
 
 Point it up adalah sebuah game interaktif berbasis Python yang terinspirasi dari Arcade Pump-It-Up, dimana sebuah pointer akan bergerak seiring dengan ritme lagu dan player harus menginjak/memencet keypad untuk mendapatkan skor. Pada game ini, digunakan konsep yang sama tanpa menggunakan keyboard maupun dance-pad apapun. Hanya dengan telunjuk dan tangan, tunjuk ke arah yang sama dengan pointer yang sedang berjalan, dan dapatkan skor.
 
-Sebuah pointer akan muncul setiap 3 detik dan akan berjalan naik menuju target, gerakkan tangan sesuai dengan pointer yang aktif untuk mendapatkan skor. Game akan berhenti ketika 
+Sebuah pointer akan muncul setiap 3 detik dan akan berjalan naik menuju target, gerakkan tangan sesuai dengan pointer yang aktif untuk mendapatkan skor. Game akan berhenti ketika 6 kali Miss terjadi
 
 ## Running Game
     pip install -r requirements.txt
