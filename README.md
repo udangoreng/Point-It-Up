@@ -12,7 +12,7 @@ Sebuah pointer akan muncul setiap 3 detik dan akan berjalan naik menuju target, 
 
 First run downloads a small (~8 MB) MediaPipe hand model automatically (needs internet once).
 Python 3.9 - 3.12 recommended.
-// use --camera 1 for another webcam, --no-music to mute
+use --camera 1 for another webcam, --no-music to mute
 
 ## Hand signs (tampil secara miror)
 | Lane        | Sign                                    |
