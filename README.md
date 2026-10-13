@@ -9,11 +9,10 @@ Sebuah pointer akan muncul setiap 3 detik dan akan berjalan naik menuju target, 
 ## Running Game
     pip install -r requirements.txt
     python main.py
-    
-    # use --camera 1 for another webcam, --no-music to mute
 
 First run downloads a small (~8 MB) MediaPipe hand model automatically (needs internet once).
 Python 3.9 - 3.12 recommended.
+// use --camera 1 for another webcam, --no-music to mute
 
 ## Hand signs (tampil secara miror)
 | Lane        | Sign                                    |
